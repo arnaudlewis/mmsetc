@@ -30,5 +30,7 @@ class PostController extends Controller
             'body' => 'required',
         ]);
 
+
+        die('validated');
     }
 }
