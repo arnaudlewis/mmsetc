@@ -12,6 +12,7 @@ return [
     |
     */
 
+    //'url' => 'https://mmsetc.cdn.prismic.io/api/v2',
     'url' => 'https://your-repo-name.prismic.io/api/v2',
 
     /*

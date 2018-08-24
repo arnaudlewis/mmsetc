@@ -40,7 +40,7 @@ Route::get('/preview', function (Request $request) {
 */
 
 Route::get('/', function () {
-    return redirect('/tutorial');
+    return redirect('/post/create');
 });
 
 /*
@@ -52,3 +52,13 @@ Route::get('/', function () {
 Route::get('/tutorial', function () {
     return view('tutorial');
 });
+
+/*
+|--------------------------------------------------------------------------
+| Validation Test Routes
+|--------------------------------------------------------------------------
+*/
+
+Route::get('post/create', 'PostController@create');
+
+Route::post('post', 'PostController@store');
