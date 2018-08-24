@@ -48,7 +48,7 @@
 
             <label>title:</label>
 
-            <input type="text" value="{{ old('title') }}" name="name" class="form-control" placeholder="Name">
+            <input type="text" value="{{ old('title') }}" name="title" class="form-control" placeholder="Title">
 
             @if ($errors->has('title'))
 
@@ -62,7 +62,7 @@
 
             <label>body:</label>
 
-            <input type="password" name="password" class="form-control" placeholder="Password">
+            <input type="input" name="body" class="form-control" placeholder="body">
 
             @if ($errors->has('body'))
 

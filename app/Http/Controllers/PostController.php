@@ -26,11 +26,11 @@ class PostController extends Controller
     public function store(Request $request)
     {
         $validatedData = $request->validate([
-            'title' => 'required|unique:posts|max:255',
+            'title' => 'required|max:255',
             'body' => 'required',
         ]);
 
 
-        die('validated');
+die('succcess');
     }
 }
